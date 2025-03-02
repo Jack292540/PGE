@@ -1,0 +1,402 @@
+@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nokora:wght@100;300;400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: lightblue;
+}
+
+section {
+  width: 80%;
+  margin: auto;
+}
+.header {
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 14px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.logo_img {
+  height: 5rem;
+}
+.navbar {
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.142);
+}
+.header ul {
+  display: flex;
+  flex: 1;
+  justify-content: end;
+}
+
+.header ul li {
+  font-size: 1.5rem;
+  font-weight: 600;
+  list-style-type: none;
+}
+
+.header ul li a {
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: black;
+  transition: 0.4s;
+}
+
+.header ul li a:hover {
+  color: red;
+  text-decoration: underline;
+  border-radius: 25px;
+  padding: none;
+  font-weight: 900;
+}
+
+.intro_one {
+  width: 90%;
+  margin: auto;
+}
+.intro {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 85px;
+}
+.logo_intro {
+  display: flex;
+  justify-content: end;
+}
+
+.logo_intro img {
+  width: 50rem;
+}
+
+.subtitle {
+  line-height: 3rem;
+}
+
+.h-intro {
+  font-family: "Merriweather", serif;
+  text-align: center;
+  text-decoration: underline;
+}
+.p-intro {
+  font-family: "Nokora", sans-serif;
+  font-size: 1.4rem;
+  word-spacing: 10px;
+}
+
+.p-other {
+  color: tomato;
+  font-weight: bold;
+  text-align: center;
+}
+
+.btn_us {
+  font-size: 1.5rem;
+  padding: 0.7rem 1rem;
+  margin-left: 10rem;
+  background-color: rgba(0, 0, 255, 0.505);
+  border-radius: 30px;
+  animation: beat 1.5s infinite;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+.btn_us a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.btn_us:hover {
+  background-color: rgba(0, 0, 0, 0.171);
+  transition: 0.6s;
+}
+.btn_us a:hover {
+  color: white;
+}
+
+.logo_intro_one img {
+  width: 50rem;
+}
+.about_box {
+  width: 95vw;
+  height: 100vh;
+}
+.about_des {
+  /* border: 2px solid black; */
+  padding: 25px;
+  /* border-color: aqua; */
+  /* background-color: lightblue; */
+  border-radius: 100px;
+}
+
+.title_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 3rem;
+}
+
+.title {
+  height: 15vh;
+  line-height: 3rem;
+}
+.h-title {
+  text-decoration: none;
+}
+.p-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.goods_box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.goods_box img {
+  width: 10rem;
+  border-radius: 25px;
+  rotate: 25px;
+  height: 10rem;
+  object-fit: cover;
+}
+
+.goods_box span img {
+  height: 15rem;
+  width: 17rem;
+  padding-bottom: 1rem;
+}
+
+.h-two {
+  font-size: 3.5rem;
+}
+
+.p-two {
+  font-size: 2.5rem;
+  line-height: 5rem;
+  color: rgba(255, 0, 0, 0.855);
+}
+.intro_two {
+  width: 90%;
+}
+.about_icone {
+  height: 70vh;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  line-height: 5rem;
+}
+
+.about_icone img {
+  width: 25rem;
+  height: 20rem;
+  border-radius: 50%;
+}
+
+.shadow {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.p-three {
+  font-family: "Nokora", sans-serif;
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.telegram {
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+}
+.telegram_icone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(30, 143, 255, 0.633);
+  border-radius: 30px;
+
+  height: 3rem;
+  padding: 25px;
+  margin-top: 1rem;
+}
+.telegram_icone a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.telegram_icone img {
+  width: 2rem;
+}
+.telegram_title {
+  font-size: 1.5rem;
+}
+
+.End {
+  width: 100%;
+}
+
+footer {
+  border-top: 2px solid rgba(0, 0, 0, 0.688);
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0.322);
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .header ul {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .header ul li {
+    font-size: 1.2rem;
+  }
+
+  .intro {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    height: auto;
+  }
+  .p-other {
+    font-size: 1rem;
+  }
+  .logo_intro img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .btn_us {
+    margin: 1rem auto;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+  }
+  .about_box {
+    margin-bottom: 1rem;
+    height: auto;
+  }
+  .title {
+    height: auto;
+  }
+  .title_box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo_intro_one img {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 1rem;
+  }
+
+  .about_icone {
+    height: auto;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .about_icone img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+  }
+
+  .telegram {
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .telegram_icone {
+    flex-direction: column;
+    padding: auto;
+  }
+
+  .telegram_title {
+    font-size: 1.2rem;
+  }
+
+  .p-two {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1500px) {
+  .header {
+    justify-content: space-between;
+    height: auto;
+    text-align: center;
+  }
+
+  .header ul {
+    justify-content: center;
+    padding: 0;
+  }
+  .subtitle {
+    min-width: 40%;
+  }
+  .intro_one .h-intro {
+    font-size: 1.7rem;
+    line-height: 7rem;
+  }
+
+  .intro_one .p-intro {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+
+  .intro_one .p-other {
+    font-size: 1.3rem;
+  }
+  .logo_intro img {
+    width: 45rem;
+    object-fit: cover;
+  }
+  .logo_intro_one img {
+    max-width: 40rem;
+    object-fit: cover;
+  }
+  .about_desp {
+    max-width: 40rem;
+  }
+  .about_icone {
+    gap: 10px;
+  }
+}
